@@ -21,7 +21,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-#search-form {
+.form {
   margin-top: 36px;
   width: 400px;
   margin-left: auto;

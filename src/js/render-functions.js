@@ -4,6 +4,7 @@ export function createImageCards(images) {
   const markup = images
     .map(
       img => `
+      <li>
     <a href="${img.largeImageURL}" class="gallery-item" title="${img.tags}">
       <img src="${img.webformatURL}" alt="${img.tags}" />
       <div class="info">
@@ -13,6 +14,7 @@ export function createImageCards(images) {
         <p class="info-item"><b>Downloads:</b> ${img.downloads}</p>
       </div>
     </a>
+    </li>
   `
     )
     .join('');

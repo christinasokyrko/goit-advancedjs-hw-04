@@ -5,7 +5,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const form = document.getElementById('search-form');
+const form = document.getElementById('form');
 const input = document.getElementById('search-input');
 const loader = document.getElementById('loader');
 const gallery = document.getElementById('gallery');
