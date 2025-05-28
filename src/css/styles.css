@@ -36,6 +36,14 @@ body {
   padding: 0 8px 0 8px;
 }
 
+#search-input:hover {
+  border: solid 1px rgba(0, 0, 0, 1);
+}
+
+#search-input:active {
+  border: solid 1px rgba(78, 117, 255, 1);
+}
+
 .search-button {
   width: 92px;
   height: 40px;
@@ -43,6 +51,10 @@ body {
   border-radius: 8px;
   background-color: rgba(78, 117, 255, 1);
   color: rgba(255, 255, 255, 1);
+}
+
+.search-button:hover {
+  background-color: rgba(108, 140, 255, 1);
 }
 
 .gallery {

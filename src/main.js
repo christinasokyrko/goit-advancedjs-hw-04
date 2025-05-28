@@ -18,8 +18,10 @@ form.addEventListener('submit', async e => {
 
   if (!query) {
     iziToast.warning({
-      message: 'Поле пошуку не може бути порожнім!',
-      position: 'topRight',
+      message: 'The search field cannot be empty!',
+      position: 'bottomCenter',
+      backgroundColor: 'red',
+      messageColor: 'white',
     });
     return;
   }
@@ -34,7 +36,9 @@ form.addEventListener('submit', async e => {
       iziToast.info({
         message:
           'Sorry, there are no images matching your search query. Please try again!',
-        position: 'topRight',
+        position: 'bottomCenter',
+        backgroundColor: 'red',
+        messageColor: 'white',
       });
     } else {
       createImageCards(images);
@@ -42,8 +46,10 @@ form.addEventListener('submit', async e => {
     }
   } catch (error) {
     iziToast.error({
-      message: 'Сталася помилка при отриманні зображень',
-      position: 'topRight',
+      message: 'An error occurred while retrieving images',
+      position: 'bottomCenter',
+      backgroundColor: 'red',
+      messageColor: 'white',
     });
     console.error(error);
   } finally {
